@@ -1,0 +1,76 @@
+
+
+			Day 6 Task
+			
+
+1. The class Movie is stated below. An instance of class Movie represents a film. This class has the following three properties:
+
+				class Movies{
+					constructor (name = ' ' , studio = ' ', rating = 'PG' ){
+						this.name = name;
+						this.studio = studio;
+						this.rating = rating;
+					}
+					
+					getPg( data = []){
+							return data.filter((d) => d.rating === 'PG'); 
+					}
+				}
+
+				const movieUtils = new Movies();
+
+				var movieListed = [ 
+					new Movies( 'Ghilli', 'Sri Surya Movies', 'PG'),
+					new Movies( 'Thirupaachi', 'Super Good Films', 'PG13'),
+					new Movies( 'PS2', 'Lyca', 'PG13'),
+					new Movies( 'Good Night', 'Red Gaint', 'PG'),
+					new Movies( 'Casino Royale', 'EON Productions', 'PG13') 
+				];
+
+				console.log(movieUtils.getPg(movieListed));
+				
+				
+2.  Convert the UML diagram to Typescript class. - use number for double
+
+			This question is TypeScript  mentor didn't take typescript....
+
+
+
+3. Write a “person” class to hold all the details.
+				class Person {
+					constructor (firstName, lastName, age) {
+						this.firstName = firstName;
+						this.lastName = lastName;
+						this.age = age;
+						this.getFullName = function () {
+							return this.firstName + " " + this.lastName;
+						}
+					}
+				}
+				 
+				let person1 = new Person ("Vasanth", "Kumar", 23 );
+				console.log(person1.getFullName());
+				console.log(person1.age);
+				
+				
+4. write a class to calculate the uber price.
+
+
+				class uberFare {
+					constructor (city, fare, customerName) {
+						this.city = city;
+						this.fare = fare;
+						this.customerName  = customerName;
+				 
+					}
+						getFareCity(){
+							return "fare for the City is " +  this.fare;
+						}
+				 
+				}
+				 
+				let cityA = new uberFare( "cityA", 600, "customer1");
+				let cityB = new uberFare( "cityB", 300, "customer2");
+				 
+				console.log(cityA.getFareCity()); // 600
+				console.log(cityB.getFareCity()); // 300	
